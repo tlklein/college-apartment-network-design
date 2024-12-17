@@ -9,7 +9,7 @@ The diagram will be a general guide to my network design, including the placemen
 It is not meant to be a very detailed diagram only a rough summary.  
 The general notation used for the IP subnets will follow the recommendations set out by IPCISCO (IPCISCO, 2022).  
 
-## File Strucuture
+## File Structure
 1. Klein_Trinity_16667_Network Design
 - Documentation and report covering network design and diagrams
 3. Klein_Trinity_16667-FinalProject - FloorPLan
