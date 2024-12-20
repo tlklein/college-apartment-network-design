@@ -2,13 +2,13 @@
 
 # College Apartment Network Design Project
 
-This repository contains a comprehensive network design project created by a university student studying Computer Information Systems (CIS). 
-The project focuses on building a robust, high-performance network for a luxury college apartment, balancing hospitality, reliability, and scalability.
+This repository contains a comprehensive network design project created by a university student studying Computer Information Systems (CIS). The project focuses on building a robust, high-performance network for a luxury college apartment, balancing hospitality, reliability, and scalability. The primary focus was to apply real-world network design principles in a controlled academic setting.
 
 ## Project Overview
 
-The network design simulates a hotel-style network setup catering to students, staff, and guests. The design incorporates:
+The network design simulates a hotel-style network setup catering to students, staff, and guests. 
 
+The design incorporates:
 - **High-Speed Wired and Wireless Access**: Optimized for multimedia services, online learning, and gaming.
 - **Scalability**: Ability to support thousands of concurrent users.
 - **Advanced Monitoring and Security**: Leveraging Cisco Meraki solutions for cloud-based visibility and secure SD-WAN.
@@ -43,8 +43,7 @@ The network design simulates a hotel-style network setup catering to students, s
 
 ## About the Author
 
-This project was created as part of the **CIS 3347 Network Design** Course at the University of Houston under the guidance of Professor Jose Martinez. 
-The primary focus was to apply real-world network design principles in a controlled academic setting.
+This project was created as part of the **CIS 3347 Network Design** at the University of Houston under the guidance of Professor Jose Martinez. 
 
 ---
 
