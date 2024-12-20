@@ -43,7 +43,7 @@ The design incorporates:
 
 ## About the Author
 
-This project was created as part of the **CIS 3347 Information Systems Infrastructure & Networks** at the University of Houston under the guidance of Professor Jose Martinez. 
+This project was created as part of the **CIS 3347 Information Systems Infrastructure & Networks** course at the University of Houston under the guidance of Professor Jose Martinez. 
 
 ---
 
