@@ -1,3 +1,5 @@
+![banner](https://www.ciotech.us/wp-content/uploads/2024/05/network-design-scaled.jpeg)
+
 # College Apartment Network Design Project
 
 This repository contains a comprehensive network design project created by a university student studying Computer Information Systems (CIS). 
