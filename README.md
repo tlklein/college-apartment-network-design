@@ -8,7 +8,7 @@ The project focuses on building a robust, high-performance network for a luxury 
 The network design simulates a hotel-style network setup catering to students, staff, and guests. The design incorporates:
 
 - **High-Speed Wired and Wireless Access**: Optimized for multimedia services, online learning, and gaming.
-- **Scalability**: Capable of supporting thousands of concurrent users.
+- **Scalability**: Ability to support thousands of concurrent users.
 - **Advanced Monitoring and Security**: Leveraging Cisco Meraki solutions for cloud-based visibility and secure SD-WAN.
 
 ## Features
@@ -28,7 +28,7 @@ The network design simulates a hotel-style network setup catering to students, s
 1. **File name:** Klein_Trinity_16667_Network Design
 - Documentation and report covering network design and diagrams
 2. **File name:** Klein_Trinity_16667-FinalProject - FloorPLan
-- Visco document of network diagrams
+- Visio document of network diagrams
 
 ## Getting Started
 
@@ -36,15 +36,13 @@ The network design simulates a hotel-style network setup catering to students, s
    - Familiarity with Cisco network configurations.
    - Basic understanding of subnetting and VLAN setup.
 2. **Usage**:
-   - Review the `design` folder for layout diagrams.
-   - Refer to the `tables` folder for IP and hardware configurations.
+   - Review the document for an explanation of all networking recommendations.
+   - Review the Visio document to view the network design diagram for the multiple floors and amenities.
 
 ## About the Author
 
-This project was created as part of the **CIS 3347 Network Design Course** at the University of Houston under the guidance of Professor Jose Martinez. 
+This project was created as part of the **CIS 3347 Network Design** Course at the University of Houston under the guidance of Professor Jose Martinez. 
 The primary focus was to apply real-world network design principles in a controlled academic setting.
-
-
 
 ---
 
