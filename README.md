@@ -32,14 +32,27 @@ The design incorporates:
 2. **File name:** Klein_Trinity_16667-FinalProject - FloorPLan
 - Visio document of network diagrams
 
+## Diagram Overview
+
+### First Floor
+![Screenshot](diagram-3.png)
+
+### Second Floor
+![Screenshot](diagram-2.png)
+
+
+### Third to Eight Floors
+![Screenshot](diagram-1.png)
+
+
 ## Getting Started
 
 1. **Requirements**:
    - Familiarity with Cisco network configurations.
    - Basic understanding of subnetting and VLAN setup.
 2. **Usage**:
-   - Review the document for an explanation of all networking recommendations.
-   - Review the Visio document to view the network design diagram for the multiple floors and amenities.
+   - Review the document for an explanation of all networking recommendations and routing tables. 
+   - Review the Visio document to view the full network design diagram for the multiple floors.
 
 ## About the Author
 
