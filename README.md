@@ -32,15 +32,3 @@ The design incorporates:
 ### Third to Eight Floors
 ![Screenshot](diagram-1.png)
 
-## Project Structure
-1. **File name:** Klein_Trinity_16667_Network Design
-- Documentation and report covering network design and diagrams
-2. **File name:** Klein_Trinity_16667-FinalProject - FloorPLan
-- Visio document of network diagrams
-3. **File name:** diagram-3
-- First Floor Diagram
-4. **File name:** diagram-2
-- Second Floor Diagram 
-5. **File name:** diagram-1
-- Third Floor Diagram
-  
