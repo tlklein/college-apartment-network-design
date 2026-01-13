@@ -2,17 +2,22 @@
 
 ## Project Overview
 
-This project designs a scalable, secure, and resilient network for a multi-unit college apartment complex. The architecture applies enterprise network principles (layered routing, VLAN segmentation, and SD-WAN) to support thousands of concurrent users, high-bandwidth multimedia, online learning, and IoT devices while preserving management simplicity through cloud-based tooling.
+This project covers a scalable, secure, and resilient network for a multi-unit college apartment complex. It applies enterprise network principles (layered routing, VLAN segmentation, and SD-WAN) to support thousands of concurrent users, high-bandwidth multimedia, online learning, and IoT devices while preserving management simplicity through cloud-based tooling.
 
-### Problem
+The architecture designs a hotel-style, multi-tier network architecture for a high-density college apartment to address poor Wi-Fi coverage, insecure device mixing, and scalability challenges common in multi-tenant environments. 
 
-Residential multi-tenant environments often suffer from poor Wi-Fi coverage, noisy broadcast domains, insecure device mixing (guest vs. staff vs. IoT), and operational complexity when scaling.
+The network segments resident, guest, staff, and IoT traffic using VLANs, enterprise Cisco Meraki hardware, and cloud-managed SD-WAN for resilient connectivity and simplified operations. Deliverables included multi-floor logical and physical network diagrams, IP addressing and DHCP/NAT patterns, a costed hardware and licensing BOM, and security segmentation. 
 
-### Solution
+## Project Scope & Features
 
-A hotel-style, multi-tier network that separates traffic by purpose (resident, guest, staff, IoT), uses Cisco Meraki cloud management and SD-WAN for resilient WAN connectivity, and specifies enterprise hardware for wired/wireless performance and future growth.
+- Layered Architecture: Core → Distribution → Access for redundancy and predictable routing.  
+- VLAN Segmentation: Resident, Guest, Staff, IoT, Management, and Services VLANs with ACLs.  
+- High-Density Wi-Fi: MR53 + MR30H placements and channel plan, MIMO considerations, and capacity planning.  
+- SD-WAN Resilience: MX appliances for active/active internet links and centralized policy enforcement.  
+- Operational Management: Cisco Meraki cloud console for zero-touch provisioning, telemetry, and alerting.  
+- Cost Analysis: BOM including devices, SFPs, cabling, mounting, and Meraki licensing tiers.
 
-### Tech
+### Tech & Hardware
 
 Network Hardware & Management
 
@@ -28,60 +33,35 @@ Design Patterns
 - Channel planning (1/6/11), band steering, and QoS for multimedia
 - Monitoring: cloud dashboards + SNMP/export to third-party observability
 
-## Result / Key Deliverables
+## Project Structure
 
-- Complete multi-floor logical and physical network diagrams (per floor topology).  
-- VLAN, IP addressing plan, and DHCP/NAT configuration patterns.  
-- Hardware & licensing bill of materials (BOM) with cost estimates.  
-- Operational playbook: onboarding, guest provisioning, firmware/patch plan, failover procedures.  
-- Security & segmentation plan including RBAC and least-privilege management.
+```text
+├── diagrams/ 
+│   ├── diagram-1.png # third to eight floor diagram
+│   ├── diagram-2.png # second floor diagram
+│   └── diagram-3.png # first floor diagram
+├── docs/ 
+│   ├── Network_Design.pdf # full report covering estimated costs, recommendations, and reasoning.
+│   └── Floor_Plan.vsdx # file of the diagram in visio 
+└── README.md
+```
 
-## Scope & Features
+## Diagrams & Documents
 
-- Layered Architecture: Core → Distribution → Access for redundancy and predictable routing.  
-- VLAN Segmentation: Resident, Guest, Staff, IoT, Management, and Services VLANs with ACLs.  
-- High-Density Wi-Fi: MR53 + MR30H placements and channel plan, MIMO considerations, and capacity planning.  
-- SD-WAN Resilience: MX appliances for active/active internet links and centralized policy enforcement.  
-- Operational Management: Cisco Meraki cloud console for zero-touch provisioning, telemetry, and alerting.  
-- Cost Analysis: BOM including devices, SFPs, cabling, mounting, and Meraki licensing tiers.
-
-## Diagrams
-
-Diagrams provide the main artifacts for reviewers. Each figure includes a brief caption explaining intent. See the 'Network  Design' PDF for further details.
+Diagrams provide the main artifacts for reviewers. See the 'Network  Design' PDF for further details.
 
 ### First Floor - Common Areas & Lobby
 
 ![First Floor Diagram](/diagrams/diagram-3.png)  
-Caption: Public area AP placement, guest onboarding flow, and primary MX uplink aggregation.
 
-### Second Floor - Residential Pod 1
+### Second Floor – Conference & Office Area Layout  
 
-![Second Floor Diagram](/diagrams/diagram-2.png)  
-Caption: Access switch layout, resident VLANs, and local trunking to distribution switches.
+![2 Floor Diagram](/diagrams/diagram-4.png)
 
-### Third–Eighth Floors - Typical Pod Design
+### Floors 3 to 8 Floor - Apartment Layout 
 
-![Upper Floors Diagram](/diagrams/diagram-1.png)  
-Caption: Repeating pod topology, AP density, and uplink consolidation strategy.
+![3 to 8 Floor Diagram](/diagrams/diagram-2.png)  
 
-## Cost Summary (high level)
+### Floors 3 to 8 Floor - Apartment West Wing Layout 
 
-- Hardware: MX250 (edge), C9300/C9500 switches, MR53/MR30H APs.  
-- Licensing: Meraki licensing per device (MBU/enterprise tiers).  
-
-## Documentation & Deliverables
-
-- `diagrams/` - floor diagrams and ER-style topology images.  
-- `docs/` - full report covering estimated costs, recommendations, and reasoning.
-
-## Repo Structure
-
-```text
-├── diagrams/
-│   ├── diagram-1.png
-│   ├── diagram-2.png
-│   └── diagram-3.png
-├── docs/
-│   ├── Network_Design.pdf
-│   └── Floor_Plan.vsdx
-└── README.md
+![3 to 8 West Wing Diagram](/diagrams/diagram-1.png)  
