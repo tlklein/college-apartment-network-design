@@ -45,7 +45,7 @@ Design Patterns & Best Practices:
 ├── docs/ 
 │   ├── Network_Design.pdf # Full report covering estimated costs, recommendations, and reasoning.
 │   └── Floor_Plan.vsdx    # File of the diagram in visio 
-└── README.md # Project summary
+└── README.md  # Project summary
 ```
 
 ## Diagrams & Documents
