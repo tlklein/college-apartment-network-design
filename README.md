@@ -8,42 +8,44 @@ The architecture designs a hotel-style, multi-tier network architecture for a hi
 
 The network segments resident, guest, staff, and IoT traffic using VLANs, enterprise Cisco Meraki hardware, and cloud-managed SD-WAN for resilient connectivity and simplified operations. Deliverables included multi-floor logical and physical network diagrams, IP addressing and DHCP/NAT patterns, a costed hardware and licensing BOM, and security segmentation. 
 
-## Project Scope & Features
+## Network Architecture & Technical Features
 
-- Layered Architecture: Core → Distribution → Access for redundancy and predictable routing.  
-- VLAN Segmentation: Resident, Guest, Staff, IoT, Management, and Services VLANs with ACLs.  
-- High-Density Wi-Fi: MR53 + MR30H placements and channel plan, MIMO considerations, and capacity planning.  
-- SD-WAN Resilience: MX appliances for active/active internet links and centralized policy enforcement.  
-- Operational Management: Cisco Meraki cloud console for zero-touch provisioning, telemetry, and alerting.  
-- Cost Analysis: BOM including devices, SFPs, cabling, mounting, and Meraki licensing tiers.
+Key Architecture Decisions:
 
-### Tech & Hardware
+- Layered Design: Core → Distribution → Access for redundancy, predictable routing, and failover.
+- VLAN Segmentation: Separate networks for Residents, Guests, Staff, IoT, Management, and Services, with ACLs enforcing isolation and security.
+- High-Density Wi-Fi: Optimized MR53 and MR30H placements, channel planning (1/6/11), MIMO, and capacity planning for multimedia, online learning, and gaming.
+- SD-WAN Resilience: MX appliances with active/active internet links and centralized policy enforcement for uptime and load balancing.
+- Operational Management: Cisco Meraki cloud console for zero-touch provisioning, telemetry monitoring, and automated alerting.
+- Cost & Resource Planning: Comprehensive BOM including hardware, SFPs, cabling, mounting, and Meraki licensing tiers.
 
-Network Hardware & Management
+### Tech Stack & Hardware
 
-- Cisco Meraki (MR access points, MX security/SD-WAN appliances, MS/Catalyst switches)
-- Router/Firewall: MX250 (SD-WAN, security)
-- Core/Distribution: C9300 / C9500 class switches (Ethernet fabric & routing)
-- Access Points: MR53, MR30H (high density + hospitality)
+Network Hardware:
 
-Design Patterns
+- Cisco Meraki: MR Access Points, MX Security/SD-WAN Appliances, MS/Catalyst Switches
+- Routers/Firewalls: MX250 (SD-WAN & security)
+- Core/Distribution Switches: C9300 / C9500 (Ethernet fabric & routing)
+- Access Points: MR53, MR30H (high density, hospitality-grade)
 
-- VLAN segmentation, Layer-2/Layer-3 access
-- DHCP scope planning, NAT, and per-VLAN ACLs
-- Channel planning (1/6/11), band steering, and QoS for multimedia
-- Monitoring: cloud dashboards + SNMP/export to third-party observability
+Design Patterns & Best Practices:
+
+- Layer-2/Layer-3 segmentation, VLAN isolation, and ACL enforcement
+- DHCP scope planning, NAT configuration per VLAN
+- Wi-Fi channel planning, band steering, and QoS for multimedia applications
+- Monitoring & Observability: Meraki dashboards, SNMP, and integration with third-party tools
 
 ## Project Structure
 
 ```text
 ├── diagrams/ 
-│   ├── diagram-1.png # third to eight floor diagram
-│   ├── diagram-2.png # second floor diagram
-│   └── diagram-3.png # first floor diagram
+│   ├── diagram-1.png # Third to eight floor diagram
+│   ├── diagram-2.png # Second floor diagram
+│   └── diagram-3.png # First floor diagram
 ├── docs/ 
-│   ├── Network_Design.pdf # full report covering estimated costs, recommendations, and reasoning.
-│   └── Floor_Plan.vsdx # file of the diagram in visio 
-└── README.md
+│   ├── Network_Design.pdf # Full report covering estimated costs, recommendations, and reasoning.
+│   └── Floor_Plan.vsdx    # File of the diagram in visio 
+└── README.md # Project summary
 ```
 
 ## Diagrams & Documents
